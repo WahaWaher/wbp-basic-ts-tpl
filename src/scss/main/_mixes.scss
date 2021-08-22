@@ -1,0 +1,386 @@
+/**
+ * Common application mixes (BEM)
+ * Bootstrap Utilities API: https://getbootstrap.com/docs/5.0/utilities/api/
+ */
+
+$utilities: ( // "font-size": (
+  //   responsive: true,
+  //   property: font-size,
+  //   class: fs,
+  //   values: $text-sizes
+  // ),
+  // "colors": (
+  //   responsive: false,
+  //   property: color,
+  //   class: text,
+  //   values: (
+  //     // primary: $primary,
+  //     // accent: $accent,
+  //     white: $white,
+  //     black: $black,
+  //     grey: $grey,
+  //   )
+  // ),
+  // "text-decoration": (
+  //   property: text-decoration,
+  //   values: none
+  // ),
+  // "text-transform": (
+  //   property: text-transform,
+  //   class: text,
+  //   values: (
+  //     lower: lowercase,
+  //     upper: uppercase,
+  //     none: none,
+  //   )
+  // ),
+  // "align": (
+  //   property: vertical-align,
+  //   class: align,
+  //   values:
+  //     // baseline
+  //     // top
+  //     middle
+  //     // bottom
+  //     // text-bottom
+  //     // text-top
+  // ),
+  // "white-space": (
+  //   property: white-space,
+  //   class: text,
+  //   values: (
+  //     wrap: normal,
+  //     nowrap: nowrap,
+  //   )
+  // ),
+  // "line-height": (
+  //   property: line-height,
+  //   class: lh,
+  //   values: (
+  //     1: 1,
+  //     // sm: 1.15,
+  //     // base: $line-height-main,
+  //     // lg: 1.75,
+  //   )
+  // ),
+  "font-weight": (property: font-weight,
+    class: fw,
+    values: ( // light: 300,
+      normal: 400,
+      // medium: 500,
+      // semibold: 600,
+      bold: 700,
+      // extrabold: 800,
+      // black: 900
+    )),
+  // "font-style": (
+  //   property: font-style,
+  //   class: fst,
+  //   values: italic normal
+  // ),
+  // "position": (
+  //   // responsive: true,
+  //   property: position,
+  //   values: static relative absolute fixed
+  // ),
+  // "z-index": (
+  //   property: z-index,
+  //   class: z,
+  //   values: (
+  //     n1: -1,
+  //     0 : 0,
+  //     1 : 1
+  //   )
+  // ),
+  // "opacity": (
+  //   property: opacity,
+  //   values: (
+  //     50 : .5
+  //   )
+  // ),
+  // "background-color": (
+  //   property: background-color,
+  //   class: bg,
+  //   values: (
+  //     primary: $primary,
+  //     accent: $accent,
+  //     white: $white,
+  //     black: $black,
+  //     grey: $grey,
+  //     holder: $grey,
+  //   )
+  // ),
+  "width": (property: width,
+    class: w,
+    values: (100p : 100%)),
+  // "max-width": (
+  //   property: max-width,
+  //   class: maw,
+  //   values: (
+  //     290 : 290px
+  //   )
+  // ),
+  // "min-width": (
+  //   property: min-width,
+  //   class: miw,
+  //   values: (
+  //     290 : 290px
+  //   )
+  // ),
+  // "height": (
+  //   property: height,
+  //   class: h,
+  //   values: (
+  //     100p : 100%
+  //   )
+  // ),
+  // "max-height": (
+  //   property: max-height,
+  //   class: mah,
+  //   values: (
+  //     290 : 290px
+  //   )
+  // ),
+  // "min-height": (
+  //   property: min-height,
+  //   class: mih,
+  //   values: (
+  //     290 : 290px
+  //   )
+  // ),
+  // "min-height": (
+  //   property: min-height,
+  //   class: mih,
+  //   values: (
+  //     290 : 290px
+  //   )
+  // ),
+  // "user-select": (
+  //   property: user-select,
+  //   values: auto none
+  // ),
+  // "pointer-events": (
+  //   property: pointer-events,
+  //   class: pe,
+  //   values: none auto,
+  // ),
+  // "cursor": (
+  //   property: cursor,
+  //   values: default pointer,
+  // ),
+);
+
+@import "~bootstrap/scss/utilities/api";
+
+/**
+ * Mix: img-{}
+ */
+.img {
+  &-cover {
+    object-fit: cover !important;
+    font-family: "object-fit: cover;" !important;
+  }
+  // &-contain {
+  //   object-fit: contain;
+  //   font-family: "object-fit: contain;";
+  // }
+  // &-full {
+  //   display: block;
+  //   width: 100%;
+  //   height: 100%;
+  // }
+}
+
+/**
+ * Mix: list-{}
+ */
+.list {
+  // &-unstyled {
+  //   list-style-type: none;
+  //   padding: 0;
+  //   margin: 0;
+  // }
+  // &-inline {}
+}
+
+/**
+ * Mix: mode-{}
+ */
+.mode {
+  // &-silent {
+  //   opacity: 0;
+  //   pointer-events: none;
+  //   user-select: none;
+  // }
+}
+
+/**
+ * Mix: fx-hover-{}
+ */
+.fx-hover {
+  // /**
+  //  * Fx: zoomIn
+  //  */
+  // &-zoomIn {
+  //   cursor: pointer;
+  //   overflow: hidden;
+  //   > * {
+  //     transition: all $trs * 2;
+  //   }
+  //   &:hover,
+  //   &:focus {
+  //     > * {
+  //       opacity: 0.75;
+  //       transform: scale(1.065);
+  //     }
+  //   }
+  //   &:active {
+  //     > * {
+  //       transform: scale(1.025);
+  //     }
+  //   }
+  // }
+
+  // /**
+  //  * Fx: moveUp
+  //  */
+  // &-moveUp {
+  //   transition: all $trs * 2;
+  //   &:hover,
+  //   &:focus {
+  //     transform: translateY(-5px);
+  //   }
+  //   &:active {
+  //     transform: translateY(2px);
+  //   }
+  // }
+}
+
+// /**
+//  * Mix: text-truncate
+//  */
+// .text-truncate {
+//   display: -webkit-box;
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   -webkit-box-orient: vertical;
+//   -webkit-line-clamp: 1;
+//   &_2 {
+//     -webkit-line-clamp: 2;
+//   }
+// }
+
+// /**
+//  * Mix: pads-{b|t|y}-{xs|sm|md|lg|xl}
+//  */
+// .pads {
+//   // XL
+//   // &-y-xl {
+//   //   padding-top: pxToRem(100); 
+//   //   padding-bottom: pxToRem(100);
+//   //   // @include media-breakpoint-down(md) {
+//   //   //   padding-top: pxToRem(90);
+//   //   //   padding-bottom: pxToRem(90);
+//   //   // }
+//   // }
+//   // &-t-xl {
+//   //   padding-top: pxToRem(100);
+//   //   // @include media-breakpoint-down(md) {
+//   //   //   padding-top: pxToRem(90);
+//   //   // }
+//   // }
+//   // &-b-xl {
+//   //   padding-bottom: pxToRem(100);
+//   //   // @include media-breakpoint-down(md) {
+//   //   //   padding-bottom: pxToRem(90);
+//   //   // }
+//   // }
+
+//   // LG
+//   &-y-lg {
+//     padding-top: pxToRem(75);
+//     padding-bottom: pxToRem(75);
+//     @include media-breakpoint-down(md) {
+//       // padding-top: pxToRem(60);
+//       // padding-bottom: pxToRem(60);
+//     }
+//   }
+//   &-t-lg {
+//     padding-top: pxToRem(75);
+//     @include media-breakpoint-down(md) {
+//       // padding-top: pxToRem(60);
+//     }
+//   }
+//   &-b-lg {
+//     padding-bottom: pxToRem(75);
+//     @include media-breakpoint-down(md) {
+//       // padding-bottom: pxToRem(60);
+//     }
+//   }
+
+//   // MD
+//   &-y-md {
+//     padding-top: pxToRem(60);
+//     padding-bottom: pxToRem(60);
+//     @include media-breakpoint-down(md) {
+//       // padding-top: pxToRem(45);
+//       // padding-bottom: pxToRem(45);
+//     }
+//   }
+//   &-t-md {
+//     padding-top: pxToRem(60);
+//     @include media-breakpoint-down(md) {
+//       // padding-top: pxToRem(45);
+//     }
+//   }
+//   &-b-md {
+//     padding-bottom: pxToRem(60);
+//     @include media-breakpoint-down(md) {
+//       // padding-bottom: pxToRem(45);
+//     }
+//   }
+
+//   // SM
+//   // &-y-sm {
+//   //   padding-top: pxToRem(45);
+//   //   padding-bottom: pxToRem(45);
+//   //   @include media-breakpoint-down(md) {
+//   //     // padding-top: pxToRem(35);
+//   //     // padding-bottom: pxToRem(35);
+//   //   }
+//   // }
+//   // &-t-sm {
+//   //   padding-top: pxToRem(45);
+//   //   @include media-breakpoint-down(md) {
+//   //     // padding-top: pxToRem(35);
+//   //   }
+//   // }
+//   // &-b-sm {
+//   //   padding-bottom: pxToRem(45);
+//   //   @include media-breakpoint-down(md) {
+//   //     // padding-bottom: pxToRem(35);
+//   //   }
+//   // }
+
+//   // XS
+//   // &-y-xs {
+//   //   padding-top: pxToRem(40);
+//   //   padding-bottom: pxToRem(40);
+//   //   @include media-breakpoint-down(md) {
+//   //     // padding-top: pxToRem(30);
+//   //     // padding-bottom: pxToRem(30);
+//   //   }
+//   // }
+//   // &-t-xs {
+//   //   padding-top: pxToRem(40);
+//   //   @include media-breakpoint-down(md) {
+//   //     // padding-top: pxToRem(30);
+//   //   }
+//   // }
+//   // &-b-xs {
+//   //   padding-bottom: pxToRem(40);
+//   //   @include media-breakpoint-down(md) {
+//   //     // padding-bottom: pxToRem(30);
+//   //   }
+//   // }
+// }

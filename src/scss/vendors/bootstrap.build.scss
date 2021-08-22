@@ -1,0 +1,89 @@
+/*!
+ * Bootstrap v5 Grid and Utilities (custom build) (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+@import '../settings';
+
+$include-column-box-sizing: true;
+
+@import "~bootstrap/scss/_functions";
+@import "~bootstrap/scss/_variables";
+
+@import "~bootstrap/scss/mixins/_lists";
+@import "~bootstrap/scss/mixins/_breakpoints";
+@import "~bootstrap/scss/mixins/_container";
+@import "~bootstrap/scss/mixins/_grid";
+@import "~bootstrap/scss/mixins/_utilities";
+
+@import "~bootstrap/scss/vendor/rfs";
+
+@import "~bootstrap/scss/_containers";
+@import "~bootstrap/scss/_grid";
+
+// @import "bootstrap/_utils-overrides";
+@import "~bootstrap/scss/_utilities";
+
+$utilities: map-get-multiple($utilities,
+  ("display",
+    "order",
+    // "flex",
+    "flex-direction",
+    // "flex-grow",
+    // "flex-shrink",
+    "flex-wrap",
+    "justify-content",
+    "align-items",
+    // "align-content",
+    // "align-self",
+    "margin",
+    "margin-x",
+    "margin-y",
+    "margin-top",
+    "margin-end",
+    "margin-bottom",
+    "margin-start",
+    "negative-margin",
+    "negative-margin-x",
+    "negative-margin-y",
+    "negative-margin-top",
+    "negative-margin-end",
+    "negative-margin-bottom",
+    "negative-margin-start",
+    "padding",
+    "padding-x",
+    "padding-y",
+    "padding-top",
+    "padding-end",
+    "padding-bottom",
+    "padding-start",
+    // "font-size",
+    // "font-style",
+    // "font-weight",
+    // "line-height",
+    "text-align",
+    // "text-decoration",
+    // "text-transform",
+    // "white-space",
+    // "word-wrap",
+    // "color",
+    // "background-color",
+    // "user-select",
+    // "pointer-events",
+    // "align",
+    // "overflow",
+    // "position",
+    // "width,
+    // "max-width",
+    // "viewport-width",
+    // "min-viewport-width",
+    // "height",
+    // "max-height",
+    // "viewport-height",
+    // "min-viewport-height",
+  ));
+
+@import "~bootstrap/scss/utilities/api";
+@import "~bootstrap/scss/helpers/_stretched-link.scss";

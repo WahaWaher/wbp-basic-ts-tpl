@@ -1,0 +1,47 @@
+/**
+ * App fonts
+ */
+@import '../settings';
+@import '../utils/_mixins';
+
+// @import '../../fonts/OpenSans-Regular/OpenSans-Regular.woff2';
+
+$font-path: '../../fonts' !default;
+
+// font-weight-doc: https://developer.mozilla.org/ru/docs/Web/CSS/font-weight
+
+// 100, Thin (Hairline)
+// @include font-face('Open Sans', '#{$font-path}/OpenSans-Thin/OpenSans-Thin', 100, normal);
+// @include font-face('Open Sans', '#{$font-path}/OpenSans-ThinItalic/OpenSans-ThinItalic', 100, italic);
+
+// 200, ExtraLight (UltraLight)
+// @include font-face('Open Sans', '#{$font-path}/OpenSans-ExtraLight/OpenSans-ExtraLight', 200, normal);
+// @include font-face('Open Sans', '#{$font-path}/OpenSans-ExtraLightItalic/OpenSans-ExtraLightItalic', 200, italic);
+
+// 300, Light
+//  @include font-face('Open Sans', '#{$font-path}/OpenSans-Light/OpenSans-Light', 300, normal);
+//  @include font-face('Open Sans', '#{$font-path}/OpenSans-LightItalic/OpenSans-LightItalic', 300, italic);
+
+// 400, Regular
+@include font-face('Open Sans', '#{$font-path}/OpenSans-Regular/OpenSans-Regular', 400, normal);
+@include font-face('Open Sans', '#{$font-path}/OpenSans-Italic/OpenSans-Italic', 400, italic);
+
+// 500, Medium
+// @include font-face('Open Sans', '#{$font-path}/OpenSans-Medium/OpenSans-Medium', 500, normal);
+// @include font-face('Open Sans', '#{$font-path}/OpenSans-MediumItalic/OpenSans-MediumItalic', 500, italic);
+
+// 600, SemiBold (Demi Bold)
+//  @include font-face('Open Sans', '#{$font-path}/OpenSans-SemiBold/OpenSans-SemiBold', 600, normal);
+//  @include font-face('Open Sans', '#{$font-path}/OpenSans-SemiBoldItalic/OpenSans-SemiBoldItalic', 600, italic);
+
+// 700, Bold
+//  @include font-face('Open Sans', '#{$font-path}/OpenSans-Bold/OpenSans-Bold', 700, normal);
+//  @include font-face('Open Sans', '#{$font-path}/OpenSans-BoldItalic/OpenSans-BoldItalic', 700, italic);
+
+// 800, ExtraBold (UltraBold)
+//  @include font-face('Open Sans', '#{$font-path}/OpenSans-ExtraBold/OpenSans-ExtraBold', 800, normal);
+//  @include font-face('Open Sans', '#{$font-path}/OpenSans-ExtraBoldItalic/OpenSans-ExtraBoldItalic', 800, italic);
+
+// 900, Black (Heavy)
+// @include font-face('Open Sans', '#{$font-path}/OpenSans-Black/OpenSans-Black', 900, normal);
+// @include font-face('Open Sans', '#{$font-path}/OpenSans-BlackItalic/OpenSans-BlackItalic', 900, italic);

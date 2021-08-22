@@ -1,0 +1,70 @@
+// Fonts:
+$font-main: 'Open Sans', sans-serif;
+
+$font-size-main: 16px;
+$font-weight-main: 400;
+$line-height-main: 1.5;
+$letter-spacing-main: normal; // 0.05em === 50(photoshop)/1000
+
+// Colors:
+$white: #fff;
+$black: #222;
+$grey: #656d78;
+
+$accent: #4fc1e9;
+$primary: #a0d468;
+
+// Sizes:
+$text-sizes: ( // tiny: 0.625rem,
+  // small: 0.75rem,
+  medium: 0.875rem,
+  base: 1rem,
+  large: 1.125rem,
+  // big: 1.25rem,
+  // huge: 1.375rem,
+);
+
+// Shadows:
+// $shadow-base: '';
+
+// Transitions
+$trs: .15s;
+
+// App Typography
+$app-font: $font-main;
+$app-font-size: $font-size-main;
+$app-line-height: $line-height-main;
+$app-font-weight: $font-weight-main;
+$app-letter-spacing: $letter-spacing-main;
+
+// Bootstrap grid/utils
+$grid-breakpoints: (xs: 0, // 0-575
+  sm: 576px, // 576-767
+  md: 768px, // 768-991
+  lg: 992px, // 992-1279
+  xl: 1280px, // 1280-1439
+  // xxl: 1440px, // 1440-...
+  // xxxl: 1920px
+);
+
+$container-max-widths: (sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px,
+  // xxl: 1380px,
+  // xxxl: 1720px
+);
+
+$grid-columns: 12;
+$grid-gutter-width: 30px;
+
+$spacer: 1rem;
+$spacers: (0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 3),
+  // 6: ($spacer * 4),
+  // 7: ($spacer * 5),
+  gap: ($grid-gutter-width / 2 / $font-size-main) + rem);

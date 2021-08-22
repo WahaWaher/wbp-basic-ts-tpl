@@ -1,0 +1,44 @@
+.title {
+  display: flex;
+  align-items: center;
+  margin: .5em 0;
+}
+.dev-box {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url('../img/dev-logo.jpg');
+  background-size: 50px 50px;
+  margin-right: 7px;
+}
+.menu-main {
+  font-size: 14px;
+  padding: 10px 0;
+  background-color: #eeeeee;
+}
+.menu-main__container {
+  display: flex;
+  align-items: center;
+}
+.menu-main img {
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+.menu-main ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 -5px;
+}
+.menu-main ul > li  {
+  margin: 0 5px;
+}
+.menu-main ul > li > a {
+  text-decoration: none;
+}
+.menu-main ul > li > a:hover {
+  text-decoration: underline;
+}

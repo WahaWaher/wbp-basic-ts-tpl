@@ -1,0 +1,87 @@
+/**
+ * Basic styles: HTML, BODY
+ */
+html {
+  font-size: $app-font-size;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+
+body {
+  min-width: 320px;
+  min-height: 500px;
+  font: $app-font-weight 1rem $app-font;
+  line-height: $app-line-height;
+  letter-spacing: $app-letter-spacing;
+  color: $black;
+  background-color: $white;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/**
+ * Base: Links
+ */
+a {
+  color: inherit;
+  text-decoration: underline;
+  transition: all $trs;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+  &:active {}
+}
+
+/**
+ * Base: Other
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.35em;
+}
+
+* > p {
+  &:first-child {
+    margin-top: 0 !important;
+  }
+  &:last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+/**
+ * Selection
+ */
+::selection {
+  color: $white;
+  background: $primary;
+}
+::-moz-selection {
+  color: $white;
+  background: $primary;
+}
